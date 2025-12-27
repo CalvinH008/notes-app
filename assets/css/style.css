@@ -1,0 +1,138 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7; /* soft grey */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container login/register */
+.container {
+  background-color: #fff; /* putih bersih */
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 360px;
+}
+
+/* Judul */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Label & Input */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fafafa;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #7aa1f7; /* soft blue focus */
+  outline: none;
+}
+
+/* Button login/register */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50; /* hijau soft */
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #45a049; /* hijau sedikit lebih gelap */
+}
+
+/* Link ke halaman lain */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover {
+  color: #4CAF50; /* hijau soft konsisten */
+}
+
+/* Alert error */
+.error {
+  background-color: #ffe3e3; /* soft red */
+  color: #a94442;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Tombol reset / icon emoji */
+.btn-reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  background-color: #bbb;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-reset:hover {
+  background-color: #999;
+}
+
+/* Tambahan: icon sampah untuk todo list */
+.buttonhapus {
+  text-decoration: none;
+  color: white;
+  background-color: #e74c3c; /* merah soft */
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.buttonhapus:hover {
+  background-color: #c0392b;
+}
+
+

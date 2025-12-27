@@ -23,11 +23,7 @@ require_once '../inc/function.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <style>
-        label{
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <form action="" method="post">
@@ -37,9 +33,9 @@ require_once '../inc/function.php';
             <?php endif; ?> 
             <h1>Login</h1>
             <label for="username" name="username">Username :</label>
-            <input type="text" name="username" placeholder="username" required>
+            <input type="text" name="username" placeholder="Username" required>
             <label for="password" name="password">Password :</label>
-            <input type="password" name="password" placeholder="password" required>
+            <input type="password" name="password" placeholder="Password" required>
             <br>
             <button type="submit" name="login">Login</button>
             <br>
