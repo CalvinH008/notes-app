@@ -8,7 +8,7 @@ require_once '../inc/function.php';
             $_SESSION["login"] = true;
             $_SESSION["username"] = $user["username"];
             $_SESSION["id"] = $user["id"];
-            header('location:../index.php');
+            header('location:../notes/index.php');
             exit();
         }else{
             $error = true;
