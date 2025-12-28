@@ -45,13 +45,13 @@
             color: #fff;
             border-radius: 6px;
         }
-
         /* ===== HERO ===== */
         .hero {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 80px 60px;
+            gap: 40px; /* Tambahin gap antara text dan image */
         }
 
         .hero-text {
@@ -81,13 +81,30 @@
         }
 
         .hero-image {
-            width: 45%;
-        }
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .hero-image img {
-            width: 100%;
-            border-radius: 12px;
-        }
+/* WRAPPER BUAT CROP */
+.image-wrapper {
+    width: 100%;
+    max-width: 560px;       /* LEBIH BESAR */
+    height: 380px;          /* FIX HEIGHT BIAR KE-CROP */
+    border-radius: 18px;
+    overflow: hidden;       /* INI YANG CROP */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+/* IMAGE */
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* CROP AMAN, KELIATAN PRO */
+    transform: scale(1.1);  /* SEDIKIT ZOOM */
+}
+
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 900px) {
@@ -156,16 +173,16 @@ footer {
         <div class="hero-text">
             <h2>Catat Ide.<br>Simpan Pikiran.</h2>
             <p>
-                NotesApp membantu kamu menyimpan catatan penting,
-                ide random, dan rencana harian dengan aman dan rapi.
-                Akses kapan saja, di mana saja.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sed amet quibusdam laudantium ipsa libero sunt facilis iste error dolorem.
             </p>
             <a href="auth/register.php">Mulai Sekarang</a>
         </div>
 
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4"
-                 alt="Notes Illustration">
+            <div class="image-wrapper">
+                <img src="https://images.ctfassets.net/lzny33ho1g45/3x94Kjg8z9fN0zryKetKbf/a197e626de8b9035f0604ee212722f03/best-ipad-note-taking-apps.jpg"
+                    alt="Notes Illustration">
+            </div>
         </div>
     </section>
    
