@@ -181,7 +181,7 @@ footer {
 </div>
 
 <footer>
-    © 2025 Notes App — PHP Native Project
+    © 2025 Notes App — PHP Native Project — Created By Calvin
 </footer>
 
 </body>

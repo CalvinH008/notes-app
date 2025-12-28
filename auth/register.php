@@ -5,6 +5,7 @@ require_once '../inc/function.php';
             echo "<script>
                     alert('User baru berhasil ditambahkan');        
             </script>";
+            header('location:login.php');
         }else{
             echo mysqli_error($conn);
         }

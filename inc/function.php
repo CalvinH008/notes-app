@@ -53,4 +53,27 @@ function login($conn, $data){
     return false;
 }
 
+function getAllNotes($user_id, $conn){
+    $stmt = mysqli_prepare($conn, "SELECT * FROM notes WHERE user_id = ?");
+    mysqli_stmt_bind_param($stmt, "i", $user_id);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    return mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
+
+function getNoteById($id, $user_id, $conn){
+
+}
+
+function tambah($user_id, $title, $content){
+
+}
+
+function edit($id, $user_id, $title, $content){
+
+}
+
+function hapus($id, $user_id){
+
+}
 ?>
